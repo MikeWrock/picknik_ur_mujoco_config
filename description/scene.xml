@@ -52,22 +52,25 @@
     <geom name="floor" pos="0 0 -1.626" size="0 0 0.05" type="plane" material="groundplane"/>   
     <!-- Define the table -->
     <body name="table" pos="1 0 0.5">
-        <geom type="box" size="0.5 0.5 0.025" pos="0 0 0.025" material="wood"/>
+        <geom type="box" size="0.5 0.5 0.025" pos="0 0 0.025" material="wood" conaffinity="1" condim="3" contype="1" />
     </body>
         
         <!-- Define the block with AprilTags on each face -->
-        <!-- <body name="block1" pos="0.75 0.2 0.575">
+        <body name="block1" pos="0.75 0.2 0.575">
             <freejoint name="block1"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="1 0 0 1" material="apriltag_material1"/>
+            <geom type="box" size="0.025 0.025 0.025" rgba="1 0 0 1" material="apriltag_material1" conaffinity="1" condim="3" contype="1" />
+            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
         </body>
         <body name="block2" pos="0.75 0.0 0.575">
             <freejoint name="block2"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="0 1 0 1" material="apriltag_material2"/>
+            <geom type="box" size="0.025 0.025 0.025" rgba="0 1 0 1" material="apriltag_material2" conaffinity="1" condim="3" contype="1" />
+            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
         </body>
         <body name="block3" pos="0.75 -0.2 0.575">
             <freejoint name="block3"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="0 0 1 1" material="apriltag_material3"/>
-        </body> -->
+            <geom type="box" size="0.025 0.025 0.025" rgba="0 0 1 1" material="apriltag_material3" conaffinity="1" condim="3" contype="1" />
+            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
+        </body>
         <body name='desk' pos='-0.1 0.75 -1.626'>
 
             <body name="counters1" pos="0 0 0" >

@@ -336,8 +336,8 @@
     <torque name="ee_torque_sensor" site="robotiq_ft_sensor" />
   </sensor>
 
-  <keyframe>
-    <!-- ur_base_pan ur_shoulder ur_elbow ur_wrist_1 ur_wrist_2 ur_wrist_3 gripper linear_rail-->
+  <!-- <keyframe>
+     ur_base_pan ur_shoulder ur_elbow ur_wrist_1 ur_wrist_2 ur_wrist_3 gripper linear_rail
     <key qpos='0 -2.1 1.2 -1.9 -1.9 0 0 1.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'/>
-  </keyframe>
+  </keyframe> -->
 </mujoco>
