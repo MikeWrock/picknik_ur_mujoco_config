@@ -2,107 +2,161 @@
 <!-- Kitchen inspired by https://github.com/Farama-Foundation/Gymnasium-Robotics/tree/main/gymnasium_robotics/envs/franka_kitchen -->
 
 <mujoco model="ur5e scene">
-  <include file="ur5e.xml"/>
-<include file="assets/franka_assets/assets.xml"/>
+  <!-- <include file="ur5e.xml"/> -->
+<!-- <include file="assets/franka_assets/assets.xml"/>
     <include file="assets/item_assets/oven_asset.xml"/>
     <include file="assets/item_assets/counters_asset.xml"/>
     <include file="assets/item_assets/backwall_asset.xml"/>
     <include file="assets/item_assets/slidecabinet_asset.xml"/>
     <include file="assets/item_assets/hingecabinet_asset.xml"/>
     <include file="assets/item_assets/microwave_asset.xml"/>
-    <include file="assets/item_assets/kettle_asset.xml"/>
-
-    <asset>
-        <!-- Define textures and materials -->
-        <texture name="wood" type="cube" file="assets/wood.png"/>
-        <material name="wood" texture="wood" texrepeat="1 1"/>
-
-        <!-- Define AprilTag textures -->
-        <texture name="apriltag1" type="2d" file="assets/tag36_11_00000.png"/>
-        <texture name="apriltag2" type="2d" file="assets/tag36_11_00001.png"/>
-        <texture name="apriltag3" type="2d" file="assets/tag36_11_00002.png"/>
-
-        <!-- Define block materials with AprilTags -->
-        <material name="apriltag_material1" texture="apriltag1" texuniform="false" />
-        <material name="apriltag_material2" texture="apriltag2" texuniform="false" />
-        <material name="apriltag_material3" texture="apriltag3" texuniform="false" />
-    </asset>
-
-  <statistic center="0.3 0 0.4" extent="0.8"/>
-
-  <visual>
-    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0 0 0"/>
-    <rgba haze="0.15 0.25 0.35 1"/>
-    <global azimuth="120" elevation="-20"/>
-  </visual>
-
+    <include file="assets/item_assets/kettle_asset.xml"/> -->
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
   <asset>
-    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
     <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
       markrgb="0.8 0.8 0.8" width="300" height="300"/>
     <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
-    <texture type="2d" name="countertop" builtin="flat" rgb1="0.8 0.7 0.6" width="512" height="512"/>
-    <material name="countertop" texture="countertop" texuniform="true" reflectance="0.3"/>
-    <texture type="2d" name="fridge" builtin="flat" rgb1="0.8 0.8 0.8" width="512" height="512"/>
-    <material name="fridge" texture="fridge" texuniform="true" reflectance="0.3"/>
+  </asset>
+<asset> 
+    <material name="wire_115115115" specular="0.3499999999999999" shininess="0.032" rgba="0.4510 0.4510 0.4510 1"/>
+    <material name="white" specular="0.3499999999999999" shininess="0.032" rgba="1 1 1 1"/>
+    <material name="clear" specular="0.3499999999999999" shininess="0.032" rgba="1 1 1 0.25"/>
+    <material name="glass" specular="0.3499999999999999" shininess="0.032" rgba="0.5 0.5 1 0.25"/>
+    <material name="grey" specular="0.3499999999999999" shininess="0.032" rgba="0.5 0.5 0.5 1"/>
+    <material name="wire_022022022" specular="0.3499999999999999" shininess="0.032" rgba="0.0863 0.0863 0.0863 1"/>
+    <material name="wire_088199225" specular="0.3499999999999999" shininess="0.032" rgba="0.3451 0.7804 0.8824 1"/>
+    <material name="wire_028089177" specular="0.3499999999999999" shininess="0.032" rgba="0.1098 0.3490 0.6941 1"/>
+    <material name="wire_008008136" specular="0.3499999999999999" shininess="0.032" rgba="0.0314 0.0314 0.5333 0.25"/>
+    <material name="wire_087225198" specular="0.3499999999999999" shininess="0.032" rgba="0.3412 0.8824 0.7765 0.25"/>
+    <material name="wire_227153153" specular="0.3499999999999999" shininess="0.032" rgba="0.8902 0.6000 0.6000 0.25"/>
+    <material name="wire_028028177" specular="0.3499999999999999" shininess="0.032" rgba="0.1098 0.1098 0.6941 0.25"/>
+    <material name="wire_060135006" specular="0.3499999999999999" shininess="0.032" rgba="0.2353 0.5294 0.0235 0.25"/>
+    <material name="wire_141007058" specular="0.3499999999999999" shininess="0.032" rgba="0.5529 0.0275 0.2275 1"/>
+    <material name="wire_166229229" specular="0.3499999999999999" shininess="0.032" rgba="0.6510 0.8980 0.8980 1"/>
+    <material name="wire_050062062" specular="0.3499999999999999" shininess="0.032" rgba="0.1961 0.2431 0.2431 1"/>
+    <material name="wire_081072072" specular="0.3499999999999999" shininess="0.032" rgba="0.3176 0.2824 0.2824 1"/>
+    <material name="wire_023020020" specular="0.3499999999999999" shininess="0.032" rgba="0.0902 0.0784 0.0784 1"/>
+    <material name="wire_046043043" specular="0.3499999999999999" shininess="0.032" rgba="0.1804 0.1686 0.1686 1"/>
+    <material name="wire_163105056" specular="0.3499999999999999" shininess="0.032" rgba="0.6392 0.4118 0.2196 1"/>
+    <material name="wire_027177147" specular="0.3499999999999999" shininess="0.032" rgba="0.1059 0.6941 0.5765 1"/>
+    <material name="wire_143225087" specular="0.3499999999999999" shininess="0.032" rgba="0.5608 0.8824 0.3412 1"/>
+    <material name="wire_027177027" specular="0.3499999999999999" shininess="0.032" rgba="0.1059 0.6941 0.1059 1"/>
+    <material name="wire_006135006" specular="0.3499999999999999" shininess="0.032" rgba="0.0235 0.5294 0.0235 1"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_0.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_1.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_2.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_3.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_4.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_5.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_6.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_7.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_8.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_9.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_10.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_11.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_12.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_13.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_14.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_15.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_16.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_17.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_18.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_19.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_0.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_1.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_2.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_3.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_4.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_5.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_6.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_7.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_8.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_9.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_10.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_11.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_12.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_13.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_14.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_15.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_16.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_17.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_18.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_19.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_20.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_21.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_22.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_23.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_24.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_25.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_26.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_27.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_28.obj" scale="0.01 0.01 0.01"/>
   </asset>
 
   <worldbody>
-    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
-    <geom name="floor" pos="0 0 -1.626" size="0 0 0.05" type="plane" material="groundplane"/>   
-    <!-- Define the table -->
-    <body name="table" pos="1 0 0.5">
-        <geom type="box" size="0.5 0.5 0.025" pos="0 0 0.025" material="wood" conaffinity="1" condim="3" contype="1" 
-        
-        />
+    <geom name="floor" pos="0 0 -1.626" size="0 0 0.05" type="plane" material="groundplane" />   
+ <body name="00259_Laboratory_no_subdiv" euler="90 0 0">
+      <geom mesh="00259_Laboratory_no_subdiv_0" material="white" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_1" material="wire_027177027" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_2" material="grey" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_3" material="wire_027177147" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_4" material="wire_163105056" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_5" material="wire_046043043" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_6" material="wire_023020020" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_7" material="wire_081072072" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_8" material="wire_050062062" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_9" material="wire_166229229" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_10" material="wire_141007058" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_11" material="wire_060135006" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_12" material="clear" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_13" material="clear" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_14" material="clear" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_15" material="glass" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_16" material="clear" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_17" material="wire_088199225" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_18" material="wire_022022022" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_19" material="wire_115115115" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_0" rgba="0.483711950935506 0.6467891535552951 0.6773509191269865 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_1" rgba="0.5394143094559884 0.7171230738936903 0.5086706708645925 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_2" rgba="0.582516158640621 0.09502099292677413 0.22295940617521948 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_3" rgba="0.6798854354427956 0.42068430231533205 0.28961254362256694 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_4" rgba="0.5341470067226969 0.13838579460335665 0.21400370513005873 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_5" rgba="0.05453230277663024 0.29039504796236215 0.3972366611006738 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_6" rgba="0.17443359808722514 0.892905493072983 0.16478553211372526 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_7" rgba="0.4866871279082877 0.8001624852048476 0.4770509196162751 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_8" rgba="0.9105102415631575 0.4962936477659996 0.8664432545686702 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_9" rgba="0.44146350596044026 0.506338950906841 0.9864930639271117 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_10" rgba="0.8389407796002237 0.6729661793800095 0.09112464237540618 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_11" rgba="0.8054779316268554 0.25904627413485204 0.9156096485040904 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_12" rgba="0.04436292158943633 0.448628009489076 0.264672428753399 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_13" rgba="0.3949034978194015 0.2228186576755793 0.497524452567646 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_14" rgba="0.8134795247900817 0.49793645581268964 0.6325216600785998 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_15" rgba="0.9501021603691734 0.715998307517916 0.781921871676976 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_16" rgba="0.5808405444806156 0.6543361630723135 0.11975745985216912 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_17" rgba="0.6747113957880436 0.9112552299044104 0.5159105361504707 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_18" rgba="0.3185386163957077 0.49115921145071484 0.9556632098094267 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_19" rgba="0.47949378472956794 0.3024307027624952 0.005330270720281249 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_20" rgba="0.2707408624081894 0.5089730544887414 0.5137805720412109 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_21" rgba="0.3576824489321907 0.6550721957138136 0.4358818997861611 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_22" rgba="0.2064991102266437 0.5590365522455548 0.9390583125989105 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_23" rgba="0.03976108196050043 0.46532510530834703 0.7306928478926911 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_24" rgba="0.7282795655349033 0.4706714804918173 0.3271892984615987 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_25" rgba="0.12860073415462858 0.9195704678370602 0.20989959646152678 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_26" rgba="0.4788246566216632 0.15905993237363958 0.5784140365116529 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_27" rgba="0.34317234477181136 0.539948690632874 0.18987812731268505 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_28" rgba="0.6961282726132676 0.6704187487890182 0.18013277195266653 1" class="collision"/>
     </body>
-        
-        <!-- Define the block with AprilTags on each face -->
-        <body name="block1" pos="0.75 0.2 0.575">
-            <freejoint name="block1"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="1 0 0 1" material="apriltag_material1" conaffinity="1" condim="3" contype="1" 
-            
-            />
-            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
-        </body>
-        <body name="block2" pos="0.75 0.0 0.575">
-            <freejoint name="block2"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="0 1 0 1" material="apriltag_material2" conaffinity="1" condim="3" contype="1" 
-            
-            />
-            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
-        </body>
-        <body name="block3" pos="0.75 -0.2 0.575">
-            <freejoint name="block3"/>
-            <geom type="box" size="0.025 0.025 0.025" rgba="0 0 1 1" material="apriltag_material3" conaffinity="1" condim="3" contype="1" 
-            
-            />
-            <inertial pos="0 0 0" quat="0 0 0 1" mass="0.01" diaginertia="1e-05 1e-05 1e-05" />
-        </body>
-        <body name='desk' pos='-0.1 0.75 -1.626'>
+    <!-- <body>
+        <freejoint />
+      <geom mesh="00259_Laboratory_no_subdiv_15" material="wire_008008136" class="visual"/>      
 
-            <body name="counters1" pos="0 0 0" >
-                <include file="assets/item_assets/counters_chain.xml"/>
-            </body>
-            <body name="oven" pos="0 0 0" >
-                <include file="assets/item_assets/oven_chain.xml"/>
-            </body>
-            <body name="backwall" pos="0 0 0" >
-                <include file="assets/item_assets/backwall_chain.xml"/>
-            </body>
-            <body name="slidecabinet" pos="0.4 0.3 2.6" >
-                <include file="assets/item_assets/slidecabinet_chain.xml"/>
-            </body>
-            <body name="hingecabinet" pos="-0.504 0.28 2.6" >
-                <include file="assets/item_assets/hingecabinet_chain.xml"/>
-            </body>
-            <body name="microwave" pos="-0.750 -0.025 1.6" euler="0 0 0.3">
-                <include file="assets/item_assets/microwave_chain.xml"/>
-            </body>
-        </body>
-        <body name="kettle" pos="-0.269 0.35 0">
-            <freejoint name="kettle"/>
-            <include file="assets/item_assets/kettle_chain.xml"/>
-        </body>
+      </body> -->
   </worldbody>
 </mujoco>

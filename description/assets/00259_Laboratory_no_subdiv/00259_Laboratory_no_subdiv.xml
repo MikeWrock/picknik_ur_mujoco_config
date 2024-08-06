@@ -1,0 +1,134 @@
+<mujoco model="00259_Laboratory_no_subdiv">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <material name="wire_115115115" specular="0.3499999999999999" shininess="0.032" rgba="0.4510 0.4510 0.4510 1"/>
+    <material name="wire_022022022" specular="0.3499999999999999" shininess="0.032" rgba="0.0863 0.0863 0.0863 1"/>
+    <material name="wire_088199225" specular="0.3499999999999999" shininess="0.032" rgba="0.3451 0.7804 0.8824 1"/>
+    <material name="wire_028089177" specular="0.3499999999999999" shininess="0.032" rgba="0.1098 0.3490 0.6941 1"/>
+    <material name="wire_008008136" specular="0.3499999999999999" shininess="0.032" rgba="0.0314 0.0314 0.5333 1"/>
+    <material name="wire_087225198" specular="0.3499999999999999" shininess="0.032" rgba="0.3412 0.8824 0.7765 1"/>
+    <material name="wire_227153153" specular="0.3499999999999999" shininess="0.032" rgba="0.8902 0.6000 0.6000 1"/>
+    <material name="wire_028028177" specular="0.3499999999999999" shininess="0.032" rgba="0.1098 0.1098 0.6941 1"/>
+    <material name="wire_060135006" specular="0.3499999999999999" shininess="0.032" rgba="0.2353 0.5294 0.0235 1"/>
+    <material name="wire_141007058" specular="0.3499999999999999" shininess="0.032" rgba="0.5529 0.0275 0.2275 1"/>
+    <material name="wire_166229229" specular="0.3499999999999999" shininess="0.032" rgba="0.6510 0.8980 0.8980 1"/>
+    <material name="wire_050062062" specular="0.3499999999999999" shininess="0.032" rgba="0.1961 0.2431 0.2431 1"/>
+    <material name="wire_081072072" specular="0.3499999999999999" shininess="0.032" rgba="0.3176 0.2824 0.2824 1"/>
+    <material name="wire_023020020" specular="0.3499999999999999" shininess="0.032" rgba="0.0902 0.0784 0.0784 1"/>
+    <material name="wire_046043043" specular="0.3499999999999999" shininess="0.032" rgba="0.1804 0.1686 0.1686 1"/>
+    <material name="wire_163105056" specular="0.3499999999999999" shininess="0.032" rgba="0.6392 0.4118 0.2196 1"/>
+    <material name="wire_027177147" specular="0.3499999999999999" shininess="0.032" rgba="0.1059 0.6941 0.5765 1"/>
+    <material name="wire_143225087" specular="0.3499999999999999" shininess="0.032" rgba="0.5608 0.8824 0.3412 1"/>
+    <material name="wire_027177027" specular="0.3499999999999999" shininess="0.032" rgba="0.1059 0.6941 0.1059 1"/>
+    <material name="wire_006135006" specular="0.3499999999999999" shininess="0.032" rgba="0.0235 0.5294 0.0235 1"/>
+    <mesh file="00259_Laboratory_no_subdiv_0.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_1.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_2.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_3.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_4.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_5.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_6.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_7.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_8.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_9.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_10.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_11.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_12.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_13.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_14.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_15.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_16.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_17.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_18.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_19.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_0.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_1.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_2.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_3.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_4.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_5.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_6.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_7.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_8.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_9.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_10.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_11.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_12.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_13.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_14.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_15.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_16.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_17.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_18.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_19.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_20.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_21.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_22.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_23.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_24.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_25.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_26.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_27.obj"/>
+    <mesh file="00259_Laboratory_no_subdiv_collision_28.obj"/>
+  </asset>
+  <worldbody>
+    <body name="00259_Laboratory_no_subdiv">
+      <geom mesh="00259_Laboratory_no_subdiv_0" material="wire_006135006" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_1" material="wire_027177027" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_2" material="wire_143225087" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_3" material="wire_027177147" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_4" material="wire_163105056" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_5" material="wire_046043043" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_6" material="wire_023020020" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_7" material="wire_081072072" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_8" material="wire_050062062" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_9" material="wire_166229229" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_10" material="wire_141007058" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_11" material="wire_060135006" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_12" material="wire_028028177" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_13" material="wire_227153153" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_14" material="wire_087225198" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_15" material="wire_008008136" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_16" material="wire_028089177" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_17" material="wire_088199225" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_18" material="wire_022022022" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_19" material="wire_115115115" class="visual"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_0" rgba="0.483711950935506 0.6467891535552951 0.6773509191269865 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_1" rgba="0.5394143094559884 0.7171230738936903 0.5086706708645925 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_2" rgba="0.582516158640621 0.09502099292677413 0.22295940617521948 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_3" rgba="0.6798854354427956 0.42068430231533205 0.28961254362256694 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_4" rgba="0.5341470067226969 0.13838579460335665 0.21400370513005873 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_5" rgba="0.05453230277663024 0.29039504796236215 0.3972366611006738 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_6" rgba="0.17443359808722514 0.892905493072983 0.16478553211372526 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_7" rgba="0.4866871279082877 0.8001624852048476 0.4770509196162751 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_8" rgba="0.9105102415631575 0.4962936477659996 0.8664432545686702 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_9" rgba="0.44146350596044026 0.506338950906841 0.9864930639271117 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_10" rgba="0.8389407796002237 0.6729661793800095 0.09112464237540618 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_11" rgba="0.8054779316268554 0.25904627413485204 0.9156096485040904 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_12" rgba="0.04436292158943633 0.448628009489076 0.264672428753399 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_13" rgba="0.3949034978194015 0.2228186576755793 0.497524452567646 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_14" rgba="0.8134795247900817 0.49793645581268964 0.6325216600785998 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_15" rgba="0.9501021603691734 0.715998307517916 0.781921871676976 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_16" rgba="0.5808405444806156 0.6543361630723135 0.11975745985216912 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_17" rgba="0.6747113957880436 0.9112552299044104 0.5159105361504707 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_18" rgba="0.3185386163957077 0.49115921145071484 0.9556632098094267 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_19" rgba="0.47949378472956794 0.3024307027624952 0.005330270720281249 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_20" rgba="0.2707408624081894 0.5089730544887414 0.5137805720412109 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_21" rgba="0.3576824489321907 0.6550721957138136 0.4358818997861611 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_22" rgba="0.2064991102266437 0.5590365522455548 0.9390583125989105 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_23" rgba="0.03976108196050043 0.46532510530834703 0.7306928478926911 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_24" rgba="0.7282795655349033 0.4706714804918173 0.3271892984615987 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_25" rgba="0.12860073415462858 0.9195704678370602 0.20989959646152678 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_26" rgba="0.4788246566216632 0.15905993237363958 0.5784140365116529 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_27" rgba="0.34317234477181136 0.539948690632874 0.18987812731268505 1" class="collision"/>
+      <geom mesh="00259_Laboratory_no_subdiv_collision_28" rgba="0.6961282726132676 0.6704187487890182 0.18013277195266653 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>
