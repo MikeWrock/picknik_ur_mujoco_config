@@ -2,7 +2,7 @@
 <!-- Kitchen inspired by https://github.com/Farama-Foundation/Gymnasium-Robotics/tree/main/gymnasium_robotics/envs/franka_kitchen -->
 
 <mujoco model="ur5e scene">
-  <!-- <include file="ur5e.xml"/> -->
+  <include file="ur5e.xml"/>
 <!-- <include file="assets/franka_assets/assets.xml"/>
     <include file="assets/item_assets/oven_asset.xml"/>
     <include file="assets/item_assets/counters_asset.xml"/>
@@ -11,14 +11,7 @@
     <include file="assets/item_assets/hingecabinet_asset.xml"/>
     <include file="assets/item_assets/microwave_asset.xml"/>
     <include file="assets/item_assets/kettle_asset.xml"/> -->
-  <default>
-    <default class="visual">
-      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
-    </default>
-    <default class="collision">
-      <geom group="3" type="mesh"/>
-    </default>
-  </default>
+
   <asset>
     <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
       markrgb="0.8 0.8 0.8" width="300" height="300"/>
@@ -49,63 +42,63 @@
     <material name="wire_143225087" specular="0.3499999999999999" shininess="0.032" rgba="0.5608 0.8824 0.3412 1"/>
     <material name="wire_027177027" specular="0.3499999999999999" shininess="0.032" rgba="0.1059 0.6941 0.1059 1"/>
     <material name="wire_006135006" specular="0.3499999999999999" shininess="0.032" rgba="0.0235 0.5294 0.0235 1"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_0.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_1.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_2.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_3.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_4.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_5.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_6.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_7.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_8.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_9.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_10.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_11.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_12.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_13.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_14.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_15.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_16.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_17.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_18.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_19.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_0.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_1.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_2.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_3.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_4.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_5.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_6.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_7.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_8.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_9.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_10.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_11.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_12.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_13.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_14.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_15.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_16.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_17.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_18.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_19.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_20.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_21.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_22.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_23.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_24.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_25.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_26.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_27.obj" scale="0.01 0.01 0.01"/>
-    <mesh file="assets/00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_28.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_0.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_1.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_2.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_3.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_4.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_5.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_6.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_7.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_8.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_9.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_10.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_11.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_12.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_13.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_14.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_15.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_16.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_17.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_18.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_19.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_0.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_1.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_2.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_3.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_4.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_5.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_6.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_7.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_8.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_9.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_10.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_11.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_12.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_13.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_14.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_15.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_16.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_17.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_18.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_19.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_20.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_21.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_22.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_23.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_24.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_25.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_26.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_27.obj" scale="0.01 0.01 0.01"/>
+    <mesh file="00259_Laboratory_no_subdiv/00259_Laboratory_no_subdiv_collision_28.obj" scale="0.01 0.01 0.01"/>
   </asset>
 
   <worldbody>
     <geom name="floor" pos="0 0 -1.626" size="0 0 0.05" type="plane" material="groundplane" />   
- <body name="00259_Laboratory_no_subdiv" euler="90 0 0">
+      <body name="00259_Laboratory_no_subdiv" euler="1.57 1.57 0">
       <geom mesh="00259_Laboratory_no_subdiv_0" material="white" class="visual"/>
       <geom mesh="00259_Laboratory_no_subdiv_1" material="wire_027177027" class="visual"/>
-      <geom mesh="00259_Laboratory_no_subdiv_2" material="grey" class="visual"/>
+      <!-- <geom mesh="00259_Laboratory_no_subdiv_2" material="grey" class="visual"/> -->
       <geom mesh="00259_Laboratory_no_subdiv_3" material="wire_027177147" class="visual"/>
       <geom mesh="00259_Laboratory_no_subdiv_4" material="wire_163105056" class="visual"/>
       <geom mesh="00259_Laboratory_no_subdiv_5" material="wire_046043043" class="visual"/>
